@@ -68,30 +68,6 @@ streamlit run web_app.py
 python data_collector.py
 ```
 
-## Project Structure
-
-```
-gesture-recognition/
-├── main.py                 # Main application entry point
-├── gesture_recognition.py  # Core gesture recognition module
-├── drawing_app.py         # Interactive drawing application
-├── web_app.py            # Streamlit web interface
-├── data_collector.py     # Data collection tool
-├── model_trainer.py      # Custom model training
-├── utils/
-│   ├── __init__.py
-│   ├── gesture_detector.py
-│   ├── hand_landmarks.py
-│   └── drawing_utils.py
-├── models/
-│   └── gesture_model.h5
-├── data/
-│   ├── raw/
-│   └── processed/
-├── config/
-│   └── gestures.json
-└── requirements.txt
-```
 
 ## Configuration
 
@@ -109,14 +85,3 @@ Edit `config/gestures.json` to customize gesture mappings:
   }
 }
 ```
-
-## Contributing
-
-1. Fork the repository
-2. Create a feature branch
-3. Make your changes
-4. Submit a pull request
-
-## License
-
-MIT License - see LICENSE file for details 
