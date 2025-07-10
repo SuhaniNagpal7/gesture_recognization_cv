@@ -1,0 +1,133 @@
+{
+  "gestures": {
+    "pointing": {
+      "action": "draw",
+      "description": "Index finger extended for drawing",
+      "fingers": {
+        "thumb": false,
+        "index": true,
+        "middle": false,
+        "ring": false,
+        "pinky": false
+      }
+    },
+    "fist": {
+      "action": "erase",
+      "description": "Closed hand for erasing",
+      "fingers": {
+        "thumb": false,
+        "index": false,
+        "middle": false,
+        "ring": false,
+        "pinky": false
+      }
+    },
+    "peace": {
+      "action": "select",
+      "description": "Peace sign (index and middle finger)",
+      "fingers": {
+        "thumb": false,
+        "index": true,
+        "middle": true,
+        "ring": false,
+        "pinky": false
+      }
+    },
+    "thumbs_up": {
+      "action": "confirm",
+      "description": "Thumbs up for confirmation",
+      "fingers": {
+        "thumb": true,
+        "index": false,
+        "middle": false,
+        "ring": false,
+        "pinky": false
+      }
+    },
+    "thumbs_down": {
+      "action": "cancel",
+      "description": "Thumbs down for cancellation",
+      "fingers": {
+        "thumb": true,
+        "index": false,
+        "middle": false,
+        "ring": false,
+        "pinky": false
+      }
+    },
+    "open_palm": {
+      "action": "clear",
+      "description": "Open palm (all fingers extended)",
+      "fingers": {
+        "thumb": true,
+        "index": true,
+        "middle": true,
+        "ring": true,
+        "pinky": true
+      }
+    },
+    "three_fingers": {
+      "action": "zoom",
+      "description": "Three fingers (index, middle, ring)",
+      "fingers": {
+        "thumb": false,
+        "index": true,
+        "middle": true,
+        "ring": true,
+        "pinky": false
+      }
+    },
+    "ok_sign": {
+      "action": "ok",
+      "description": "OK sign (thumb and index forming circle)",
+      "fingers": {
+        "thumb": true,
+        "index": true,
+        "middle": false,
+        "ring": false,
+        "pinky": false
+      }
+    }
+  },
+  "settings": {
+    "confidence_threshold": 0.8,
+    "gesture_history_size": 5,
+    "camera_width": 640,
+    "camera_height": 480,
+    "fps": 30,
+    "display_width": 1280,
+    "display_height": 720
+  },
+  "drawing": {
+    "canvas_width": 800,
+    "canvas_height": 600,
+    "colors": {
+      "black": [0, 0, 0],
+      "red": [0, 0, 255],
+      "green": [0, 255, 0],
+      "blue": [255, 0, 0],
+      "yellow": [0, 255, 255],
+      "purple": [255, 0, 255],
+      "orange": [0, 165, 255]
+    },
+    "default_thickness": 3,
+    "max_undo_steps": 50
+  },
+  "model_training": {
+    "test_size": 0.2,
+    "random_state": 42,
+    "neural_network": {
+      "epochs": 50,
+      "batch_size": 32,
+      "validation_split": 0.2
+    },
+    "random_forest": {
+      "n_estimators": 100,
+      "random_state": 42
+    },
+    "svm": {
+      "kernel": "rbf",
+      "random_state": 42
+    }
+  }
+} 
